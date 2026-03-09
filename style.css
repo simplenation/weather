@@ -1,163 +1,113 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 main{
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: whitesmoke;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
-.best{
-    height: 75%;
-    width: 24%;
-    background: linear-gradient(to bottom right, lightblue,green);
-    padding: 3% 4%;
-    border-radius: 12px;
-    box-shadow: 5px 5px 10px whitesmoke;
-    
-}
-.best-parent{
-    display: flex;
-    justify-content: space-around;
-}
-input{
-    height: 55px;
-    width: 75%;
-    border-radius: 40px;
-    /* margin-left: %; */
-    padding-left: 5%;
-    font-size: medium;
-    font-weight: bold;
-    border: none;
-}
-button{
-    height: 54px;
-    width: 54px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    /* margin-right: 10%; */
-}
-button .search{
-    width: 30%;
-    padding-top: 8%;
-    padding-left: 40%;
-    display: flex;
-}
-.city-sec{
-    height: 10%;
-    width: 100%;
+
+main section{
+    height: 80%;
+    width: 320px;
     /* background-color: teal; */
+    background: linear-gradient(to bottom right, skyblue, green);
+    border-radius: 10px;
+    padding: 3%;
+}
+
+main section .search-con{
+    display: flex;
+    /* background-color: orange;*/
+    justify-content: space-between;
+}
+
+input{
+    width: 80%;
+    height: 3em;
+    border-radius: 8px;
+    border: solid 1px green;
+    padding-left: 3%;
+    outline: none;
+}
+
+button{
+    height: 3em;
+    width: 15%;
+    border-radius: 20px;
+    border: none;
+}
+
+#cityName{
+    text-align: center;
+    font-size: 200%;
+    /* background-color: orangered; */
+    margin-top: 5%;
+    color: whitesmoke;
+}
+
+section .temp-con{
+    height: 10em;
+    width: 100%;
+    /* background-color: yellowgreen; */
+}
+
+.temp-con .temp{
+    height: 80%;
+    width: 100%;
+    /* background-color: blueviolet; */
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 500%;
+    font-weight: bold;
+    color: whitesmoke;
 }
-.city-sec .city{
-    font-size: 2vw;
-    color: white;
-}
-.degree-sec{
-    height: 11%;
-    width: 100%;
-    /* background-color: lightpink; */
+
+.temp-con p{
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+    color: whitesmoke;
 }
-.minus{
-display: flex;
-flex-wrap: nowrap;
-}
-.minus .degree{
-    font-size: 6vw;
-    color: white;
-}
-.minus .reduce{
-    font-size:4vw ;
-    color: white;
-    padding-top: 13%;
-}
-.temp-sec{
-    height: 10%;
+
+section .details{
+    height: 45%;
     width: 100%;
-    /* background-color: lightsalmon; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.temp-sec .temp{
-  color: white;
-  font-size: large;
-}
-.last-con-sec{
-    height: 62%;
-    width: 100%;
-    /* background-color: beige; */
-}
-.last-con-sec .last-con{
-    height: 100%;
-    width: 100%;
+    /* background-color: coral; */
+    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /* background-color: bisque; */
+    justify-content: space-around;
+    align-items: center;
 }
-.last-con .con-one{
-    height: 26%;
-    width: 44%;
-    border: solid 3px white;
+
+.details div{
+    height: 30%;
+    width: 45%;
+    /* background-color: grey; */
+    border: solid 1px whitesmoke;
+    text-align: center;
     border-radius: 8px;
-    padding: 2% 1%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    
 }
- .zero,.Humidity{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-    color: white;
-    /* padding: 25%; */
-    /* margin-top: 3%; */
+
+.details div span{
+    font-size: 30px;
+    color: whitesmoke;
 }
-.pos,.wind{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-    color: white;
+
+.details div p{
+    font-weight: bold;
+    color: whitesmoke;
 }
-.bos,.feel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-    color: white; 
-}
-.cos,.visi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-    color: white;  
-}
-.dos,.pres{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-    color: white; 
-}
-.eos,.uv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-    color: white; 
-}
+
+
+

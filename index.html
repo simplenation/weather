@@ -4,62 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <main>
-        <div id="best" class="best">
-            <div id="best-parent" class="best-parent">
-            <input id="textinput" type="text" placeholder="enter city name"></input>
-           
-            <button id="search"><img class="search" src="./image.png" alt=""></button>
-        </div>
-        <div id="city-sec" class="city-sec">
-            <div id="city" class="city">CITY</div>
-        </div>
-        <div id="degree-sec" class="degree-sec">
-            <div id="minus" class="minus">
-             <span id="degree" class="degree">--</span>
-             <span id="reduce" class="reduce">ºC</span>
-            </div>
-        </div>
-        <div id="temp-sec" class="temp-sec">
-            <div id="temp" class="temp">
-                <span>Temperature</span>
-            </div>
-        </div>
-        <div id="last-con-sec" class="last-con-sec">
-            <div id="last-con" class="last-con">
-                <div id="con-one" class="con-one">
-                    <span id="zero" class="zero">0%</span>
-                    <span id="Humidity" class="Humidity">Humidity</span>
-                </div>
-                <div id="con-one" class="con-one">
-                    <span id="pos" class="pos">0 Km/ph</span>
-                    <span id="wind" class="wind">Wind</span>
-                </div>
-                <div id="con-one" class="con-one">
-                    <span id="bos" class="bos">0º</span>
-                    <span id="feel" class="feel">feels like</span>
-                </div>
-                <div id="con-one" class="con-one">
-                    <span id="cos" class="cos">0 Km</span>
-                    <span id="visi" class="visi">Visibility</span>
-                </div>
-                <div id="con-one" class="con-one">
-                    <span id="dos" class="dos">0 hPa</span>
-                    <span id="pres" class="pres">Pressure</span>
-                </div>
-                <div id="con-one" class="con-one">
-                    <span id="eos" class="eos">0 mw</span>
-                    <span id="uv" class="uv">UV index</span>
-                </div>
-            </div>
-        </div>
-        </div>
-    
-    </main>
 
-    <script src="./script.js"></script>
+    <main>
+        <section>
+
+            <div class="search-con">
+            <input type="text" placeholder="Enter city name" id="search" autocomplete="off">
+            <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #008080;"></i>
+            </button>
+            </div>
+
+            <p id="cityName">City</p>
+
+            <div class="temp-con">
+
+                <div class="temp"> <span id="temp">--</span> <span><sup>∘</sup>C</span></div>
+
+                <p>Temperature</p>
+            </div>
+
+            <div class="details">
+                <div class="humidity">
+                    <span id="humidity">0</span> <span>%</span>
+                    <p>Humidity</p>
+                </div>
+
+                <div class="wind">
+                    <span id="wind">0</span> <span>km/ph</span>
+                    <p>Wind</p>
+                </div>
+
+                <div class="feels">
+                    <span id="feels">0</span> <span>⁰</span>
+                    <p>Feels Like</p>
+                </div>
+
+                <div class="visibility">
+                    <span id="visibility">0</span> <span>km</span>
+                    <p>Visibility</p>
+                </div>
+
+                <div class="pressure">
+                    <span id="pressure">0</span> <span>hPa</span>
+                    <p>Pressure</p>
+                </div>
+
+                <div class="uv">
+                    <span id="uv">0</span> <span>mw</span>
+                    <p>UV Index</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    
+    <script src="./api.js"></script>
 </body>
 </html>
